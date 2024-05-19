@@ -17,6 +17,8 @@ opt.wrap = false
 opt.ignorecase = true
 opt.smartcase = true
 
+opt.list = true
+opt.listchars = {tab = '>~', space = "·"}
 opt.cursorline = false
 
 opt.termguicolors = true

@@ -132,6 +132,16 @@ return {
           },
         })
       end,
+      ["gopls"] = function()
+          lspconfig["gopls"].setup({
+              capabilities = capabilities
+          })
+      end,
+      ["pyright"] = function()
+          lspconfig["pyright"].setup({
+                capabilities = capabilities
+          })
+      end,
     })
   end,
 }
