@@ -1,4 +1,3 @@
-
 vim.cmd("let g:netrw_liststyle = 3")
 
 local opt = vim.opt
@@ -18,9 +17,8 @@ opt.ignorecase = true
 opt.smartcase = true
 
 opt.list = true
-opt.listchars = {tab = '>~', space = "·"}
+opt.listchars = { tab = "··", space = "·" }
 opt.cursorline = false
-opt.wrap = true
 
 opt.termguicolors = true
 opt.background = "dark"
@@ -35,17 +33,14 @@ opt.splitbelow = true
 
 opt.swapfile = false
 
-  vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
-    vim.lsp.diagnostic.on_publish_diagnostics, {
-      -- disable virtual text
-      virtual_text = true,
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
+	-- disable virtual text
+	virtual_text = true,
 
-      -- show signs
-      signs = true,
+	-- show signs
+	signs = true,
 
-      -- delay update diagnostics
-      update_in_insert = true,
-      -- display_diagnostic_autocmds = { "InsertLeave" },
-
-    }
-  )
+	-- delay update diagnostics
+	update_in_insert = true,
+	-- display_diagnostic_autocmds = { "InsertLeave" },
+})
