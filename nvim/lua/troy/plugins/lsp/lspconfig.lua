@@ -10,6 +10,11 @@ return {
 		-- import lspconfig plugin
 		local lspconfig = require("lspconfig")
 
+		-- Local servers
+		lspconfig.zls.setup({
+			filetypes = { "zig", "zir" },
+		})
+
 		-- import mason_lspconfig plugin
 		local mason_lspconfig = require("mason-lspconfig")
 
@@ -148,15 +153,6 @@ return {
 			["pyright"] = function()
 				lspconfig["pyright"].setup({
 					capabilities = capabilities,
-				})
-			end,
-			["clangd"] = function()
-				lspconfig["clangd"].setup({
-					capabilities = capabilities,
-					cmd = {
-						"clangd",
-						"--fallback-style=webkit",
-					},
 				})
 			end,
 		})

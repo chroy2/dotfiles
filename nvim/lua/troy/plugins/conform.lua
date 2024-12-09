@@ -20,6 +20,7 @@ return {
 			lua = { "stylua" },
 			python = { "black" },
 			javascript = { "prettier" },
+			html = { "prettier" },
 			go = { "gofmt" },
 		},
 		-- Set up format-on-save

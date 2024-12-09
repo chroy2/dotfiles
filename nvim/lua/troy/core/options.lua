@@ -2,6 +2,8 @@ vim.cmd("let g:netrw_liststyle = 3")
 
 local opt = vim.opt
 
+--- ft plugins
+
 opt.relativenumber = true
 opt.number = true
 
