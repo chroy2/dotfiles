@@ -2,14 +2,15 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
 config.font = wezterm.font_with_fallback({
-	"JetBrains Mono",
-	"ComicShannsMono Nerd Font",
-	"MesloLGS Nerd Font",
+	"Ubuntu Mono",
+	--"MesloLGS Nerd Font",
+	--"Hurmit Nerd Font Mono",
+	--"JetBrains Mono",
+	--"ComicShannsMono Nerd Font",
 	"Symbols Nerd Font Mono",
-	"Hurmit Nerd Font Mono",
 	"Monaco",
 })
-config.font_size = 18
+config.font_size = 20
 
 config.window_decorations = "RESIZE"
 config.color_scheme = "Catppucin"
@@ -24,6 +25,7 @@ config.colors = {
 }
 
 config.enable_tab_bar = false
+
 --[[
 wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_width)
 	-- The filled in variant of the < symbol
@@ -62,4 +64,5 @@ wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_wid
 	end
 end)
 ]]
+
 return config
