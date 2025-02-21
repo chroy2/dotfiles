@@ -133,35 +133,11 @@
 		<Setting name="Local filelist sortorder">1 0</Setting>
 		<Setting name="Remote filelist sortorder">0 0</Setting>
 		<Setting name="Already connected choice">1</Setting>
-		<Setting name="Last automatic update check">2024-11-27 16:57:11</Setting>
-		<Setting name="Update Check New Version" platform="mac">release 3.68.1
-
-3.68.1 (2024-11-04)
-
-+ macOS: Fixed a build issue affecting App Notarization on arm64
-- Updated translations
-
-3.68.0 (2024-10-31)
-
-+ Added option to always refresh remote directory listings when starting a recursive operation
-- Changing logfile settings no longer requires a restart of FileZilla
-- Fixed a display issue with special characters in usernames
-- MSW: Fixed local file list not updating after renaming or deleting items
-- SFTP: Update interval of transfer progress during uploads should now be more consistent on very slow connections
-- Updated to libfilezilla 0.49.0
-
-3.67.1 (2024-07-10)
-
-- MSW: Fixed an issue with confirmation dialogs for file deletion not being modal
-- Updated to libfilezilla 0.48.1
-
-3.67.1-rc1 (2024-06-27)
-
-- Fixed an issue migrating old queue files if several older versions have been skipped
-- Updated to libfilezilla 0.48.0
+		<Setting name="Last automatic update check">2024-12-15 19:23:41</Setting>
+		<Setting name="Update Check New Version" platform="mac">release 3.67.0
 </Setting>
-		<Setting name="Splitter positions (v2)">83 -70 500000000 100 100 500000000</Setting>
-		<Setting name="Window position and size">0 344 -932 1053 864 </Setting>
+		<Setting name="Window position and size">0 1213 199 1087 1031 </Setting>
+		<Setting name="Splitter positions (v2)">83 -70 398633257 100 100 500000000</Setting>
 		<Setting name="Tab data" sensitive="1">
 			<Tabs>
 				<Tab connected="1" selected="1">
@@ -176,7 +152,7 @@
 					<BypassProxy>0</BypassProxy>
 					<Site></Site>
 					<RemotePath>1 0 4 home 8 tuo65949 11 public_html</RemotePath>
-					<LocalPath>/Users/troywitmer/Documents/School/OperatingSystems/Labs/</LocalPath>
+					<LocalPath>/Users/troywitmer/Documents/School/OperatingSystems/Labs/Lab4/</LocalPath>
 				</Tab>
 			</Tabs>
 		</Setting>

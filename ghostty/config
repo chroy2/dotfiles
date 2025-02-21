@@ -1,0 +1,6 @@
+
+#background-opacity = .6
+#background-blur-radius = 10
+font-family = "ComicShannsMono Nerd Font"
+font-size = 16
+theme = atom
