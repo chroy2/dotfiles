@@ -5,56 +5,55 @@ local M = {
 	priority = 1000,
 	config = function()
 		require("catppuccin").setup({
-			transparent_background = true,
-			styles = {
-				keywords = { "bold" },
-				functions = { "italic" },
+			flavour = "auto", -- latte, frappe, macchiato, mocha
+			background = { -- :h background
+				light = "latte",
+				dark = "mocha",
 			},
+			transparent_background = false, -- disables setting the background color.
+			show_end_of_buffer = false, -- shows the '~' characters after the end of buffers
+			term_colors = true, -- sets terminal colors (e.g. `g:terminal_color_0`)
+			dim_inactive = {
+				enabled = false, -- dims the background color of inactive window
+				shade = "dark",
+				percentage = 0.15, -- percentage of the shade to apply to the inactive window
+			},
+			no_italic = false, -- Force no italic
+			no_bold = false, -- Force no bold
+			no_underline = false, -- Force no underline
+			styles = { -- Handles the styles of general hi groups (see `:h highlight-args`):
+				comments = { "italic" }, -- Change the style of comments
+				conditionals = { "italic" },
+				loops = {},
+				functions = {},
+				keywords = {},
+				strings = {},
+				variables = {},
+				numbers = {},
+				booleans = {},
+				properties = {},
+				types = {},
+				operators = {},
+			},
+			color_overrides = {},
+			custom_highlights = {},
+			default_integrations = true,
 			integrations = {
-				alpha = false,
-				neogit = false,
+				cmp = true,
+				gitsigns = true,
 				nvimtree = true,
-				treesitter_context = false,
-				rainbow_delimiters = false,
-				mini = { enabled = false },
-				dropbar = { enabled = false },
-				illuminate = { enabled = false },
+				treesitter = true,
+				notify = false,
 				mason = true,
-				noice = true,
-				notify = true,
-				neotest = true,
-				which_key = true,
-				nvim_surround = true,
+				mini = {
+					enabled = true,
+					indentscope_color = "",
+				},
 			},
 		})
+
 		vim.cmd.colorscheme("catppuccin-mocha")
 	end,
 }
 
 return M
-
---[[
-    {
-	"scottmckendry/cyberdream.nvim",
-	lazy = false,
-	priority = 1000,
-	config = function()
-		vim.cmd.colorscheme("cyberdream")
-	end,
-}
-]]
-
---[[
-{
-	"sainnhe/gruvbox-material",
-	lazy = false,
-	priority = 1000,
-	config = function()
-		local transparent = true
-		vim.g.gruvbox_material_background = "hard"
-		vim.g.gruvbox_material_foreground = "original"
-		vim.g.gruvbox_material_transparent_background = transparent
-		vim.cmd.colorscheme("gruvbox-material")
-	end,
-}
-    ]]

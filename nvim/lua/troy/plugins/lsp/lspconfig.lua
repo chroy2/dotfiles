@@ -7,6 +7,21 @@ return {
 		{ "folke/neodev.nvim", opts = {} },
 	},
 	config = function()
+		vim.diagnostic.config({
+			virtual_text = {
+				prefix = "●", -- or “►”, “■”, whatever you like
+				spacing = 4,
+			},
+			signs = true, -- your custom signs from above
+			underline = true,
+			update_in_insert = false,
+			severity_sort = true,
+			float = {
+				border = "rounded",
+				source = "always", -- show e.g. [pyright] in the float
+			},
+		})
+
 		-- import lspconfig plugin
 		local lspconfig = require("lspconfig")
 

@@ -21,6 +21,7 @@ return {
 			python = { "black" },
 			javascript = { "prettier" },
 			html = { "prettier" },
+			jsx = { "prettier" },
 			go = { "gofmt" },
 		},
 		-- Set up format-on-save
