@@ -1,2 +1,3 @@
-2025/05/06-22:15:28.233 aff4 Creating DB /home/chroy/.config/google-chrome/Default/Extension Scripts since it was missing.
-2025/05/06-22:15:28.236 aff4 Reusing MANIFEST /home/chroy/.config/google-chrome/Default/Extension Scripts/MANIFEST-000001
+2025/05/06-23:21:56.938 3d2 Reusing MANIFEST /home/chroy/.config/google-chrome/Default/Extension Scripts/MANIFEST-000001
+2025/05/06-23:21:56.938 3d2 Recovering log #3
+2025/05/06-23:21:56.939 3d2 Reusing old log /home/chroy/.config/google-chrome/Default/Extension Scripts/000003.log 

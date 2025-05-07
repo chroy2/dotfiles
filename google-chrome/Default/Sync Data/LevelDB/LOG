@@ -1,3 +1,15 @@
 2025/05/06-23:09:21.199 3d2 Reusing MANIFEST /home/chroy/.config/google-chrome/Default/Sync Data/LevelDB/MANIFEST-000001
 2025/05/06-23:09:21.204 3d2 Recovering log #3
 2025/05/06-23:09:21.204 3d2 Reusing old log /home/chroy/.config/google-chrome/Default/Sync Data/LevelDB/000003.log 
+2025/05/06-23:21:57.864 3da Level-0 table #5: started
+2025/05/06-23:21:57.867 3da Level-0 table #5: 123166 bytes OK
+2025/05/06-23:21:57.868 3da Delete type=0 #3
+2025/05/06-23:21:59.599 3db Level-0 table #7: started
+2025/05/06-23:21:59.604 3db Level-0 table #7: 98408 bytes OK
+2025/05/06-23:21:59.608 3db Delete type=0 #4
+2025/05/06-23:22:00.885 3da Level-0 table #9: started
+2025/05/06-23:22:00.888 3da Level-0 table #9: 98384 bytes OK
+2025/05/06-23:22:00.889 3da Delete type=0 #6
+2025/05/06-23:26:18.300 3d3 Level-0 table #11: started
+2025/05/06-23:26:18.302 3d3 Level-0 table #11: 103155 bytes OK
+2025/05/06-23:26:18.303 3d3 Delete type=0 #8
