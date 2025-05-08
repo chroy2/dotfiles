@@ -1,6 +1,6 @@
 
-#background-opacity = .85
-#background-blur-radius = 20
+background-opacity = .85
+background-blur-radius = 20
 font-family = "MesloLGS Nerd Font"
 font-size = 14
-theme = Cyberdyne
+theme = catppuccin-frappe
