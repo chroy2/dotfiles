@@ -1,12 +1,5 @@
 #!/usr/bin/env bash
 #
-# Forked from the excellent rofi-bluetooth script by Nick Clyde
-# (https://github.com/nickclyde/rofi-bluetooth). Simply calls wofi
-# instead of rofi.
-#
-# A script that generates a wofi menu that uses bluetoothctl to
-# connect to bluetooth devices and display status info.
-#
 # Depends on:
 #   Arch repositories: wofi, bluez-utils (contains bluetoothctl)
 
