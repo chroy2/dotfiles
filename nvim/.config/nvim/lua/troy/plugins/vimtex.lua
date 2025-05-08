@@ -3,6 +3,6 @@ return {
 	lazy = false,
 	config = function()
 		vim.cmd("let g:tex_flavor = 'latex'")
-		vim.cmd("let g:vimtex_view_method = 'skim'")
+		vim.cmd("let g:vimtex_view_method = 'zathura'")
 	end,
 }
