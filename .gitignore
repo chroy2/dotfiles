@@ -12,6 +12,8 @@ oh-my-zsh/
 Electron/
 yay/
 
+*lazy-lock.json
+
 dolphinrc
 trashrc
 mimeapps.list
