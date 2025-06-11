@@ -20,18 +20,9 @@ return {
 			-- list of servers for mason to install
 			ensure_installed = {
 				"clangd",
-				"css-lsp",
 				"gopls",
-				"html-lsp",
-				"jinja-lsp",
-				"lua-language-server",
-				"prettierd",
-				"pylint",
 				"pyright",
 				"ruff",
-				"stylua",
-				"svelte-language-server",
-				"tailwindcss-language-server",
 				"svelte",
 				"graphql",
 				"emmet_ls",
