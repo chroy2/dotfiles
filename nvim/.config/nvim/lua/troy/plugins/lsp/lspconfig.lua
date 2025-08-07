@@ -154,7 +154,7 @@ return {
 								globals = { "vim" },
 							},
 							completion = {
-								callSnippet = "Replace",
+								-- callSnippet = "Replace",
 							},
 						},
 					},

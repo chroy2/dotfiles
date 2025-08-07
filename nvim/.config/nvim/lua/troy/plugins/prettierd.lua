@@ -1,5 +1,8 @@
+return {}
 -- ~/.config/nvim/lua/troy/plugins/prettierd.lua
+--[[
 return {
+
 	{
 		-- We still need a “dummy” repo or path here so Lazy.nvim doesn’t complain.
 		-- Use any real plugin you already have, or a no-op plugin, e.g.:
@@ -62,4 +65,4 @@ return {
 			})
 		end,
 	},
-}
+}]]

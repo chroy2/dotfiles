@@ -17,12 +17,22 @@ return {
 	opts = {
 		-- Define your formatters
 		formatters_by_ft = {
+			javascript = { "prettierd" },
+			javascriptreact = { "prettierd" },
+			typescript = { "prettierd" },
+			typescriptreact = { "prettierd" },
+			css = { "prettierd" },
+			scss = { "prettierd" },
+			html = { "prettierd", "djlint" },
+			json = { "prettierd" },
+			markdown = { "prettierd" },
 			lua = { "stylua" },
 			python = { "black" },
-			javascript = { "prettier" },
-			html = { "prettier" },
-			jsx = { "prettier" },
+			jsx = { "prettierd" },
 			go = { "gofmt" },
+			jinja = { "djlint" },
+			jinja2 = { "djlint" },
+			htmldjango = { "djlint" },
 		},
 		-- Set up format-on-save
 		format_on_save = { timeout_ms = 500, lsp_fallback = true },
@@ -30,6 +40,10 @@ return {
 		formatters = {
 			shfmt = {
 				prepend_args = { "-i", "2" },
+			},
+			djlint = {
+				timeout_ms = 3000, -- Increase timeout for djlint
+				prepend_args = { "--reformat", "--indent", "2" }, -- Ensure reformat mode
 			},
 		},
 	},
