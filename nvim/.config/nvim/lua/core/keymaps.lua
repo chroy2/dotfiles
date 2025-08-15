@@ -1,8 +1,8 @@
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 --Disable the spacebar keys defaults in normal and visual modes
-vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true})
+vim.keymap.set({ "n", "v" }, "<Space>", "<Nop>", { silent = true })
 
 local opts = { noremap = true, silent = true }
 
