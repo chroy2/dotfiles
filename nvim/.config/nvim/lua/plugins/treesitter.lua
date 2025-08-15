@@ -1,8 +1,7 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
-	-- use latest; or set `version` to a tag if you prefer pinning
 	build = ":TSUpdate",
-	lazy = false, -- load at startup; or use events if you want lazy-loading
+	lazy = false, -- load at startup
 	main = "nvim-treesitter.configs",
 	opts = {
 		ensure_installed = {
@@ -17,6 +16,9 @@ return {
 			"python",
 		},
 		auto_install = true,
-		highlight = { enable = true, additional_vim_regex_highlighting = false },
+		highlight = {
+			enable = true,
+			additional_vim_regex_highlighting = false,
+		},
 	},
 }

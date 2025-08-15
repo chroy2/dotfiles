@@ -153,7 +153,25 @@ return {
 			tailwindcss = {},
 			dockerls = {},
 			sqlls = {},
-			rust_analyzer = {},
+			rust_analyzer = {
+				assist = {
+					importEnforceGranularity = true,
+					importPrefix = "crate",
+				},
+				cargo = {
+					allFeatures = true,
+				},
+				checkOnSave = {
+					command = "clippy",
+				},
+				inlayHints = { locationLinks = false },
+				diagnostics = {
+					enable = true,
+					experimental = {
+						enable = true,
+					},
+				},
+			},
 			jsonls = {},
 			yamlls = {},
 			lua_ls = {

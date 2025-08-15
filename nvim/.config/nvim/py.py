@@ -1,0 +1,2 @@
+class asdf:
+    x: int

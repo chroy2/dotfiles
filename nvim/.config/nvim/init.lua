@@ -21,6 +21,7 @@ require("lazy").setup({
 	require("plugins.treesitter"),
 	require("plugins.telescope"),
 	require("plugins.autocmp"),
-	require("plugins.none-ls"),
+	require("plugins.conform"),
 	require("plugins.lsp-config"),
+	require("plugins.trouble"),
 })
