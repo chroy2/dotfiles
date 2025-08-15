@@ -135,9 +135,11 @@ return {
 			pyright = {},
 			html = { filetypes = { "html", "twig", "hbs" } },
 			cssls = {},
+			bashls = {},
 			tailwindcss = {},
 			dockerls = {},
 			sqlls = {},
+			shfmt = {},
 			rust_analyzer = {
 				assist = {
 					importEnforceGranularity = true,

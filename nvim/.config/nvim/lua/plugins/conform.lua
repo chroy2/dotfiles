@@ -23,6 +23,7 @@ return {
 			jsx = { "prettier" },
 			go = { "gofmt" },
 			rust = { "rustfmt" }, -- Use rustfmt for Rust files
+			bash = { "shfmt" },
 		},
 		-- Set up format-on-save
 		format_on_save = { timeout_ms = 500, lsp_fallback = true },
