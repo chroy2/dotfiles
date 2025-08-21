@@ -2,6 +2,6 @@ background-opacity = .7
 background-blur-radius = 30
 font-family = Mononoki Nerd Font
 font-family = Symbols Nerd Font
-
 font-size = 15
+window-decoration = false
 theme = catppuccin-mocha
