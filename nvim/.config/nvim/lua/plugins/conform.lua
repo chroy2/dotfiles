@@ -18,9 +18,9 @@ return {
 		-- Define your formatters
 		formatters_by_ft = {
 			lua = { "stylua" },
-			javascript = { "prettier" },
-			html = { "prettier" },
-			jsx = { "prettier" },
+			javascript = { "prettierd" },
+			html = { "prettierd" },
+			jsx = { "prettierd" },
 			go = { "gofmt" },
 			rust = { "rustfmt" }, -- Use rustfmt for Rust files
 			bash = { "shfmt" },
