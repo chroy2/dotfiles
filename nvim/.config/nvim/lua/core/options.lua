@@ -13,3 +13,4 @@ vim.o.softtabstop = 4
 vim.o.expandtab = true
 vim.o.list = true
 vim.opt.listchars = { tab = "··", space = "·" }
+vim.o.signcolumn = "yes"

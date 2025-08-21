@@ -1,5 +1,7 @@
-background-opacity = 1
-background-blur-radius = 20
-font-family = "MesloLGS Nerd Font"
-font-size = 12
-theme = catppuccin-frappe
+background-opacity = .7
+background-blur-radius = 30
+font-family = Iosevka Nerd Font
+font-family = Symbols Nerd Font
+
+font-size = 15
+theme = catppuccin-mocha
