@@ -21,6 +21,7 @@ return {
 			javascript = { "prettierd" },
 			html = { "prettierd" },
 			jsx = { "prettierd" },
+			markdown = { "prettierd" },
 			go = { "gofmt" },
 			rust = { "rustfmt" }, -- Use rustfmt for Rust files
 			bash = { "shfmt" },
