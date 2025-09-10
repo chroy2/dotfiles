@@ -18,6 +18,7 @@ return {
 		auto_install = true,
 		highlight = {
 			enable = true,
+			disable = { "html", "jinja", "htmldjango", "django" },
 			additional_vim_regex_highlighting = false,
 		},
 	},

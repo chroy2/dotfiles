@@ -133,13 +133,14 @@ return {
 			ts_ls = {},
 			ruff = {},
 			pyright = {},
-			html = { filetypes = { "html", "twig", "hbs" } },
+			html = { filetypes = { "twig", "hbs" } },
 			cssls = {},
 			bashls = {},
 			tailwindcss = {},
 			dockerls = {},
 			sqlls = {},
 			shfmt = {},
+			jinja_lsp = { filetypes = { "html" } },
 			rust_analyzer = {
 				assist = {
 					importEnforceGranularity = true,

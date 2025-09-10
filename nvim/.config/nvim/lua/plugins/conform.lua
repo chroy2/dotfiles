@@ -19,11 +19,14 @@ return {
 		formatters_by_ft = {
 			lua = { "stylua" },
 			javascript = { "prettierd" },
-			html = { "prettierd" },
+			html = { "djlint" },
+			django = { "djlint" },
+			htmldjango = { "djlint" },
+			jinja = { "djlint" },
 			jsx = { "prettierd" },
 			markdown = { "prettierd" },
 			go = { "gofmt" },
-			rust = { "rustfmt" }, -- Use rustfmt for Rust files
+			rust = { "rustfmt" },
 			bash = { "shfmt" },
 		},
 		-- Set up format-on-save
@@ -32,6 +35,10 @@ return {
 		formatters = {
 			shfmt = {
 				prepend_args = { "-i", "2" },
+			},
+			djlint = {
+				command = "djlint",
+				prepend_args = { "--reformat", "--profile", "htmldjango" },
 			},
 		},
 	},
