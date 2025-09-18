@@ -17,6 +17,7 @@ return {
 	opts = {
 		-- Define your formatters
 		formatters_by_ft = {
+			nix = { "nixpkgs_fmt" },
 			lua = { "stylua" },
 			javascript = { "prettierd" },
 			html = { "djlint" },
