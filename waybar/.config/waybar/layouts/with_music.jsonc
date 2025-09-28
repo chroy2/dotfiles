@@ -2,7 +2,7 @@
     "layer": "top",
     "position": "top",
     "width": 1920,
-    "output": "DP-2",
+    "output": "DP-1",
     "margin": "5 0",
     "group/gleft1": {
         "orientation": "horizontal",
