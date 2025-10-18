@@ -7,8 +7,7 @@
     "group/gleft1": {
         "orientation": "horizontal",
         "modules": [
-            "cpu",
-            "backlight"
+            "cpu"
         ]
     },
     "group/gleft2": {
@@ -44,8 +43,7 @@
     ],
     "modules-right": [
         "group/gright2",
-        "group/gright1",
-        "custom/ctlcenter"
+        "group/gright1"
     ],
     "include": [
         "~/.config/waybar/modules.jsonc"

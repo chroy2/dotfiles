@@ -1,7 +1,7 @@
 @import "colors.css";
 
 * {
-    font-family: 'CaskaydiaCove Nerd Font Propo';
+    font-family: 'CommitMonoSystem';
     border: none;
     border-radius: 0;
     min-height: 0;
@@ -13,8 +13,8 @@
 #waybar {
     font-weight: 700;
     background: transparent;
-    font-size: 14px;
-    border-radius: 15px;
+    font-size: 15px;
+    border-radius: 5px;
     color: @red;
 }
 
@@ -36,9 +36,10 @@ tooltip label {
 
 #tray menu,
 menu {
-    border-radius: 10px;
+    border-radius: 0px;
     font-weight: 700;
     color: @fg;
+    background-color: @module-bg;
 }
 
 #tray menu>*,
@@ -48,7 +49,7 @@ menu>* {
 
 #tray menu>*:hover,
 menu>*:hover {
-    border-radius: 10px;
+    border-radius: 0px;
     background-color: @inactive;
 }
 
@@ -76,7 +77,7 @@ menu>*:hover {
 #cpu,
 #load {
     background: transparent;
-    border-radius: 15px;
+    border-radius: 0px;
     margin: 0 3px;
 }
 
@@ -89,13 +90,13 @@ menu>*:hover {
 #custom-ctlcenter,
 #power-profiles-daemon {
     padding: 2px 9px;
-    border-radius: 15px;
+    border-radius: 5px;
     background: @module-bg;
 }
 
 #clock {
     padding: 2px 18px;
-    border-radius: 15px;
+    border-radius: 5px;
     background: @module-bg;
 }
 
@@ -132,7 +133,7 @@ menu>*:hover {
 #workspaces button {
     color: @red;
     font-size: 14px;
-    border-radius: 15px;
+    border-radius: 5px;
     margin: 0 7px;
 }
 
