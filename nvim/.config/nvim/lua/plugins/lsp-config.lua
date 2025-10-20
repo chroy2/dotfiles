@@ -140,6 +140,7 @@ return {
 			dockerls = {},
 			sqlls = {},
 			shfmt = {},
+			clangd = { filetypes = { "c", "cpp" } },
 			jinja_lsp = { filetypes = { "html" } },
 			rust_analyzer = {
 				assist = {
