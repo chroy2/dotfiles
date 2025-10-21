@@ -4,12 +4,12 @@ return {
 	priority = 1000,
 	config = function()
 		require("catppuccin").setup({
-			flavour = "frappe", -- latte, frappe, macchiato, mocha
+			flavour = "mocha", -- latte, frappe, macchiato, mocha
 			background = { -- :h background
 				light = "latte",
 				dark = "mocha",
 			},
-			transparent_background = true, -- disables setting the background color.
+			transparent_background = false, -- disables setting the background color.
 			float = {
 				transparent = false, -- enable transparent floating windows
 				solid = false, -- use solid styling for floating windows, see |winborder|
@@ -40,29 +40,9 @@ return {
 				-- miscs = {}, -- Uncomment to turn off hard-coded styles
 			},
 			highlight_overrides = {
-				all = function(colors)
+				latte = function(colors)
 					return {
-						CurSearch = { bg = colors.sky },
-						IncSearch = { bg = colors.sky },
-						CursorLineNr = { fg = colors.blue, style = { "bold" } },
-						DashboardFooter = { fg = colors.overlay0 },
-						TreesitterContextBottom = { style = {} },
-						WinSeparator = { fg = colors.overlay0, style = { "bold" } },
-						["@markup.italic"] = { fg = colors.blue, style = { "italic" } },
-						["@markup.strong"] = { fg = colors.blue, style = { "bold" } },
-						Headline = { style = { "bold" } },
-						Headline1 = { fg = colors.blue, style = { "bold" } },
-						Headline2 = { fg = colors.pink, style = { "bold" } },
-						Headline3 = { fg = colors.lavender, style = { "bold" } },
-						Headline4 = { fg = colors.green, style = { "bold" } },
-						Headline5 = { fg = colors.peach, style = { "bold" } },
-						Headline6 = { fg = colors.flamingo, style = { "bold" } },
-						rainbow1 = { fg = colors.blue, style = { "bold" } },
-						rainbow2 = { fg = colors.pink, style = { "bold" } },
-						rainbow3 = { fg = colors.lavender, style = { "bold" } },
-						rainbow4 = { fg = colors.green, style = { "bold" } },
-						rainbow5 = { fg = colors.peach, style = { "bold" } },
-						rainbow6 = { fg = colors.flamingo, style = { "bold" } },
+						FlashLabel = { fg = colors.base, bg = colors.red, style = { "bold" } },
 					}
 				end,
 			},
@@ -150,6 +130,34 @@ return {
 					base = "#1d2224",
 					mantle = "#1d2224",
 					crust = "#1f2223",
+				},
+				latte = {
+					rosewater = "#fdf7e8",
+					flamingo = "#cb4b16",
+					pink = "#d33682",
+					mauve = "#6c71c4",
+					red = "#dc322f",
+					maroon = "#c03260",
+					peach = "#cb4b1f",
+					yellow = "#b58900",
+					green = "#859900",
+					teal = "#2aa198",
+					sky = "#2398d2",
+					sapphire = "#0077b3",
+					blue = "#268bd2",
+					lavender = "#7b88d3",
+					text = "#657b83",
+					subtext1 = "#586e75",
+					subtext0 = "#073642",
+					overlay2 = "#002b36",
+					overlay1 = "#839496",
+					overlay0 = "#93a1a1",
+					surface2 = "#eee8d5",
+					surface1 = "#ebecef",
+					surface0 = "#ccd0da",
+					base = "#fdf6e3",
+					mantle = "#f7f1dc",
+					crust = "#f5ecd7",
 				},
 			},
 			custom_highlights = {},
