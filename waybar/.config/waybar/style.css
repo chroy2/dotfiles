@@ -1,1 +1,57 @@
-@import "css/style.css";
+* {
+    border: none;
+    border-radius: 0;
+    font-family: CommitMono-Ligatures, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: white;
+}
+
+tooltip {
+    background: rgba(43, 48, 59, 0.5);
+    border: 1px solid rgba(100, 114, 125, 0.5);
+}
+
+tooltip label {
+    color: white;
+}
+
+
+#workspaces {
+    transition: all 500ms ease-in-out;
+}
+
+#workspaces button.active {
+    transition: all 500ms ease-in-out;
+    min-width: 50px;
+    border-radius: 100px;
+    color: #121212;
+    background-color: white;
+
+}
+
+
+#workspaces button {
+    border-radius: 10px;
+    transition: all 500ms ease-in-out;
+    padding: 0 5px;
+    background-color: alpha(#121213, .5);
+    color: white;
+}
+
+#clock,
+#pulseaudio,
+#network {
+    border-radius: 5px;
+    background-color: alpha(#121212, .5);
+    color: white;
+    padding: 0 10px;
+    margin: 0 5px;
+}
