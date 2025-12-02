@@ -25,6 +25,7 @@ return {
 			htmldjango = { "djlint" },
 			jinja = { "djlint" },
 			jsx = { "prettierd" },
+			tsx = { "prettierd" },
 			markdown = { "prettierd" },
 			go = { "gofmt" },
 			rust = { "rustfmt" },
