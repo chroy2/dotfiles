@@ -1,5 +1,46 @@
 {
-    "include": [
-        "~/.config/waybar/layouts/with_music.jsonc"
-    ]
+    "layer": "top",
+    "margin-top": 5,
+    "width": 1920,
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "network",
+        "pulseaudio"
+    ],
+    "clock": {
+        "format": "{:%I:%M %p}",
+        "format-alt": "{:%a, %d. %b %I:%M %p}"
+    },
+    "pulseaudio": {
+        "format": "{volume}% {icon} ",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-muted": "",
+        "format-icons": {
+            "default": [
+                "",
+                ""
+            ]
+        },
+        "scroll-step": 1,
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "ignored-sinks": [
+            "Easy Effects Sink"
+        ]
+    },
+    "network": {
+        "interface": "proton0",
+        "format-connected": "VPN: {ipaddr}",
+        "format-disconnected": "VPN: off"
+    },
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "persistent-workspaces": {
+            "*": 5 // 5 workspaces by default on every monitor
+        }
+    }
 }
