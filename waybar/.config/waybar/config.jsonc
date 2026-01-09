@@ -10,7 +10,8 @@
     ],
     "modules-right": [
         "network",
-        "pulseaudio"
+        "pulseaudio",
+        "tray"
     ],
     "clock": {
         "format": "{:%I:%M %p}",

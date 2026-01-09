@@ -46,6 +46,7 @@ tooltip label {
     color: white;
 }
 
+#tray,
 #clock,
 #pulseaudio,
 #network {

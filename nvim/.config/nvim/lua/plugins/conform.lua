@@ -32,6 +32,9 @@ return {
 			tsx = { "prettierd" },
 			markdown = { "prettierd" },
 			go = { "gofmt" },
+			gohtmltmpl = { "djlint" },
+			template = { "djlint" },
+			tmpl = { "djlint" },
 			rust = { "rustfmt" },
 			bash = { "shfmt" },
 			c = { "clang-format" },
@@ -45,7 +48,7 @@ return {
 			},
 			djlint = {
 				command = "djlint",
-				prepend_args = { "--reformat", "--profile", "htmldjango" },
+				prepend_args = { "--reformat", "--profile", "jinja", "--indent", "2" },
 			},
 		},
 	},
