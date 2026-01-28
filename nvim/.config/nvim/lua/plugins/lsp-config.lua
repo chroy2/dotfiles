@@ -154,7 +154,12 @@ return {
 				checkOnSave = {
 					command = "clippy",
 				},
-				inlayHints = { locationLinks = false },
+				inlayHints = {
+					locationLinks = false,
+					typeHints = {
+						enable = true,
+					},
+				},
 				diagnostics = {
 					enable = true,
 					experimental = {
