@@ -43,5 +43,8 @@
         "persistent-workspaces": {
             "*": 5 // 5 workspaces by default on every monitor
         }
+    },
+    "tray": {
+        "spacing": 10
     }
 }
