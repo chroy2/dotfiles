@@ -25,4 +25,5 @@ require("lazy").setup({
 	require("plugins.lsp-config"),
 	require("plugins.trouble"),
 	require("plugins.markview"),
+	require("plugins.markdown-preview"),
 })
