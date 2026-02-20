@@ -172,6 +172,7 @@ return {
 			},
 			jsonls = {},
 			yamlls = {},
+			taplo = {},
 			lua_ls = {
 				settings = {
 					Lua = {

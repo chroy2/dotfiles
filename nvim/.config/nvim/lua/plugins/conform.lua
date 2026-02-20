@@ -38,6 +38,7 @@ return {
 			rust = { "rustfmt" },
 			bash = { "shfmt" },
 			c = { "clang-format" },
+			python = { "ruff_fix", "ruff_format" },
 		},
 		-- Set up format-on-save
 		format_on_save = { timeout_ms = 500, lsp_fallback = true },
