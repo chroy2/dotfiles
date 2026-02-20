@@ -131,8 +131,11 @@ return {
 		-- - settings (table): Override the default settings passed when initializing the server.
 		local servers = {
 			ts_ls = {},
-			ruff = {},
+			ruff = {
+				--logLevel = "error",
+			},
 			pyright = {},
+			ltex_plus = { filetypes = { "markdown", "text", "latex" } },
 			html = { filetypes = { "twig", "hbs" } },
 			cssls = {},
 			bashls = {},
