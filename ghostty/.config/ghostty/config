@@ -1,8 +1,8 @@
-background-opacity = 1
+background-opacity = .5
 background-blur-radius = 30
 font-family = CommitMono-Ligatures
 font-size = 14
-# window-decoration = false
+window-decoration = false
 window-position-x = 0
 window-position-y = 0
 theme = Neutron
