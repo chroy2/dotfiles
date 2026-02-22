@@ -1,9 +1,9 @@
-background-opacity = .5
+background-opacity = .8
 background-blur-radius = 30
 font-family = CommitMono-Ligatures
-font-size = 14
+font-size = 16
 window-decoration = true
 window-position-x = 0
 window-position-y = 0
-theme = Neutron
-#theme = Builtin Solarized Light
+
+cursor-color=#00FF41
