@@ -135,6 +135,19 @@ return {
 				--logLevel = "error",
 			},
 			pyright = {},
+
+			--	settings = {
+			--		basedpyright = {
+			--			analysis = {
+			--				autoSearchPaths = true,
+			--				diagnosticMode = "workspace",
+			--			},
+			--		},
+			--		python = {
+			--			pythonPath = vim.fn.exepath("python"),
+			--		},
+			--	},
+			--},
 			ltex_plus = { filetypes = { "markdown", "text", "latex" } },
 			html = { filetypes = { "twig", "hbs" } },
 			cssls = {},
