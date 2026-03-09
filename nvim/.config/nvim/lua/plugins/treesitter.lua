@@ -1,8 +1,8 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
 	build = ":TSUpdate",
-	lazy = false, -- load at startup
-	main = "nvim-treesitter.configs",
+	lazy = false,
+	main = "nvim-treesitter", -- use the new module
 	opts = {
 		ensure_installed = {
 			"c",
