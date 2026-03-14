@@ -2,24 +2,26 @@ return {
 	"nvim-treesitter/nvim-treesitter",
 	build = ":TSUpdate",
 	lazy = false,
-	main = "nvim-treesitter", -- use the new module
-	opts = {
-		ensure_installed = {
-			"c",
-			"lua",
-			"vim",
-			"vimdoc",
-			"query",
-			"markdown",
-			"markdown_inline",
-			"rust",
-			"python",
-		},
-		auto_install = true,
-		highlight = {
-			enable = true,
-			disable = { "html", "jinja", "htmldjango", "django" },
-			additional_vim_regex_highlighting = false,
-		},
-	},
+	config = function()
+		require("nvim-treesitter").setup({
+			ensure_installed = {
+				"c",
+				"lua",
+				"vim",
+				"vimdoc",
+				"query",
+				"markdown",
+				"markdown_inline",
+				"rust",
+				"python",
+			},
+			auto_install = true,
+		})
+
+		vim.api.nvim_create_autocmd("FileType", {
+			callback = function()
+				pcall(vim.treesitter.start)
+			end,
+		})
+	end,
 }

@@ -27,7 +27,6 @@ return {
 			django = { "djlint" },
 			htmldjango = { "djlint" },
 			jinja = { "djlint" },
-			markdown = { "prettier" },
 			jsx = { "prettierd" },
 			tsx = { "prettierd" },
 			markdown = { "prettierd" },
@@ -38,8 +37,9 @@ return {
 			rust = { "rustfmt" },
 			bash = { "shfmt" },
 			c = { "clang-format" },
-			python = { --[["ruff_fix",--]]
+			python = {
 				"ruff_format",
+				"ruff_fix",
 			},
 		},
 		-- Set up format-on-save
@@ -52,6 +52,9 @@ return {
 			djlint = {
 				command = "djlint",
 				prepend_args = { "--reformat", "--profile", "jinja", "--indent", "2" },
+			},
+			ruff_fix = {
+				append_args = { "--select", "I" },
 			},
 		},
 	},
