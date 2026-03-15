@@ -6,4 +6,5 @@ window-decoration = true
 window-position-x = 0
 window-position-y = 0
 
+theme = Kanagawa Dragon
 cursor-color=#00FF41
