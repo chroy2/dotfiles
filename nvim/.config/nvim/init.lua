@@ -13,10 +13,10 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-	require("plugins.colortheme"),
+	require("plugins.colorthemes"),
+	require("plugins.ghostty"),
 	require("plugins.neotree"),
 	require("plugins.tmux-navigator"),
-	require("plugins.bufferline"),
 	require("plugins.lualine"),
 	require("plugins.treesitter"),
 	require("plugins.telescope"),
@@ -24,6 +24,6 @@ require("lazy").setup({
 	require("plugins.conform"),
 	require("plugins.lsp-config"),
 	require("plugins.trouble"),
-	require("plugins.markview"),
-	require("plugins.markdown-preview"),
 })
+
+require("core.colortheme")
