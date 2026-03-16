@@ -6,4 +6,4 @@ window-decoration = true
 window-position-x = 0
 window-position-y = 0
 
-theme = Kanagawa Dragon
+theme = Gruvbox Material
