@@ -1,6 +1,8 @@
-source /usr/share/cachyos-fish-config/cachyos-config.fish
-zoxide init fish | source
+if test -f /usr/share/cachyos-fish-config/cachyos-config.fish
+    source /usr/share/cachyos-fish-config/cachyos-config.fish
+end
 
+zoxide init fish | source
 
 # overwrite greeting
 # potentially disabling fastfetch
