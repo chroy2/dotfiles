@@ -20,7 +20,7 @@ require("lazy").setup({
 	require("plugins.lualine"),
 	require("plugins.treesitter"),
 	require("plugins.telescope"),
-	require("plugins.autocmp"),
+	require("plugins.blink"),
 	require("plugins.conform"),
 	require("plugins.lsp-config"),
 	require("plugins.trouble"),
