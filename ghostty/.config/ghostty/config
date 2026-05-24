@@ -2,7 +2,10 @@ background-opacity = 1
 background-blur-radius = 30
 font-family = CommitMono-Ligatures
 font-size = 16
-window-decoration = true
+
+gtk-titlebar = false
+window-decoration = false
+
 window-position-x = 0
 window-position-y = 0
 
