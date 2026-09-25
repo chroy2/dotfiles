@@ -1,12 +1,12 @@
 background-opacity = 1
 background-blur-radius = 30
 font-family = CommitMono-Ligatures
-font-size = 16
+font-size = 18
 
-gtk-titlebar = false
-window-decoration = false
+gtk-titlebar = true
+window-decoration = true
 
 window-position-x = 0
 window-position-y = 0
 
-theme = Gruvbox Material
+theme = Kanagawa Dragon
