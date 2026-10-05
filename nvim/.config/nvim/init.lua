@@ -24,6 +24,10 @@ require("lazy").setup({
 	require("plugins.conform"),
 	require("plugins.lsp-config"),
 	require("plugins.trouble"),
+}, {
+	-- No plugins here need luarocks; disabling avoids hererocks build failures
+	-- for plugins that ship a rockspec (e.g. oxocarbon.nvim).
+	rocks = { enabled = false },
 })
 
 require("core.colortheme")
