@@ -9,4 +9,6 @@ window-decoration = true
 window-position-x = 0
 window-position-y = 0
 
+term = xterm-256color
+
 theme = Kanagawa Dragon
